@@ -12,22 +12,32 @@
         display: flex;
         justify-content: center;
       }
+
+      .sostenido {
+        background-color: black;
+        color: white;
+        max-width: 40px;
+        max-height: 120px;
+        margin-left: -20px;
+        margin-right: -20px;
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
     <div class="piano">
-      <div class="tecla" onclick="reproducir('c');">c</div>
-      <div class="tecla" onclick="reproducir('cs');">c#</div>
-      <div class="tecla" onclick="reproducir('d');">d</div>
-      <div class="tecla" onclick="reproducir('ds');">d#</div>
-      <div class="tecla" onclick="reproducir('e');">e</div>
-      <div class="tecla" onclick="reproducir('f');">f</div>
-      <div class="tecla" onclick="reproducir('fs');">f#</div>
-      <div class="tecla" onclick="reproducir('g');">g</div>
-      <div class="tecla" onclick="reproducir('gs');">g#</div>
-      <div class="tecla" onclick="reproducir('a');">a</div>
-      <div class="tecla" onclick="reproducir('as');">a#</div>
-      <div class="tecla" onclick="reproducir('b');">b</div>
+      <div class="tecla c" onclick="reproducir('c');">c</div>
+      <div class="tecla sostenido cs" onclick="reproducir('cs');">c#</div>
+      <div class="tecla d" onclick="reproducir('d');">d</div>
+      <div class="tecla sostenido ds" onclick="reproducir('ds');">d#</div>
+      <div class="tecla e" onclick="reproducir('e');">e</div>
+      <div class="tecla f" onclick="reproducir('f');">f</div>
+      <div class="tecla sostenido fs" onclick="reproducir('fs');">f#</div>
+      <div class="tecla g" onclick="reproducir('g');">g</div>
+      <div class="tecla sostenido gs" onclick="reproducir('gs');">g#</div>
+      <div class="tecla a" onclick="reproducir('a');">a</div>
+      <div class="tecla sostenido as" onclick="reproducir('as');">a#</div>
+      <div class="tecla b" onclick="reproducir('b');">b</div>
     </div>
     <audio id="audio-a" src="a.wav" type="audio/wav"></audio>
     <audio id="audio-as" src="as.wav" type="audio/wav"></audio>
