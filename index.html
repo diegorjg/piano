@@ -1,7 +1,21 @@
 <html>
-  <head> </head>
+  <head>
+    <style>
+      .tecla {
+        border: 1px solid black;
+        width: 50px;
+        height: 200px;
+        display: flex;
+      }
+    </style>
+  </head>
   <body>
-    <a class="tecla" href="#">a</a>
-    <audio src="a.wav" type="audio/wav"></audio>
+    <div class="tecla" onclick="reproducir();"></div>
+    <audio id="audio-a" src="a.wav" type="audio/wav"></audio>
+    <script>
+      function reproducir() {
+        document.getElementById('audio-a').play();
+      }
+    </script>
   </body>
 </html>
