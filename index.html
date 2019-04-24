@@ -1,6 +1,10 @@
 <html>
   <head>
     <style>
+      .piano {
+        display: flex;
+      }
+
       .tecla {
         border: 1px solid black;
         width: 50px;
@@ -10,18 +14,20 @@
     </style>
   </head>
   <body>
-    <div class="tecla" onclick="reproducir('a');"></div>
-    <div class="tecla" onclick="reproducir('b');"></div>
-    <div class="tecla" onclick="reproducir('bb');"></div>
-    <div class="tecla" onclick="reproducir('c');"></div>
-    <div class="tecla" onclick="reproducir('cb');"></div>
-    <div class="tecla" onclick="reproducir('d');"></div>
-    <div class="tecla" onclick="reproducir('e');"></div>
-    <div class="tecla" onclick="reproducir('eb');"></div>
-    <div class="tecla" onclick="reproducir('f');"></div>
-    <div class="tecla" onclick="reproducir('fb');"></div>
-    <div class="tecla" onclick="reproducir('g');"></div>
-    <div class="tecla" onclick="reproducir('gb');"></div>
+    <div class="piano">
+      <div class="tecla" onclick="reproducir('a');"></div>
+      <div class="tecla" onclick="reproducir('b');"></div>
+      <div class="tecla" onclick="reproducir('bb');"></div>
+      <div class="tecla" onclick="reproducir('c');"></div>
+      <div class="tecla" onclick="reproducir('cb');"></div>
+      <div class="tecla" onclick="reproducir('d');"></div>
+      <div class="tecla" onclick="reproducir('e');"></div>
+      <div class="tecla" onclick="reproducir('eb');"></div>
+      <div class="tecla" onclick="reproducir('f');"></div>
+      <div class="tecla" onclick="reproducir('fb');"></div>
+      <div class="tecla" onclick="reproducir('g');"></div>
+      <div class="tecla" onclick="reproducir('gb');"></div>
+    </div>
     <audio id="audio-a" src="a.wav" type="audio/wav"></audio>
     <audio id="audio-b" src="b.wav" type="audio/wav"></audio>
     <audio id="audio-bb" src="bb.wav" type="audio/wav"></audio>
