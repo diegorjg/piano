@@ -17,20 +17,30 @@
   <body>
     <div class="piano">
       <div class="tecla" onclick="reproducir('c');">c</div>
+      <div class="tecla" onclick="reproducir('cs');">c#</div>
       <div class="tecla" onclick="reproducir('d');">d</div>
+      <div class="tecla" onclick="reproducir('ds');">d#</div>
       <div class="tecla" onclick="reproducir('e');">e</div>
       <div class="tecla" onclick="reproducir('f');">f</div>
+      <div class="tecla" onclick="reproducir('fs');">f#</div>
       <div class="tecla" onclick="reproducir('g');">g</div>
+      <div class="tecla" onclick="reproducir('gs');">g#</div>
       <div class="tecla" onclick="reproducir('a');">a</div>
+      <div class="tecla" onclick="reproducir('as');">a#</div>
       <div class="tecla" onclick="reproducir('b');">b</div>
     </div>
     <audio id="audio-a" src="a.wav" type="audio/wav"></audio>
+    <audio id="audio-as" src="as.wav" type="audio/wav"></audio>
     <audio id="audio-b" src="b.wav" type="audio/wav"></audio>
     <audio id="audio-c" src="c.wav" type="audio/wav"></audio>
+    <audio id="audio-cs" src="cs.wav" type="audio/wav"></audio>
     <audio id="audio-d" src="d.wav" type="audio/wav"></audio>
+    <audio id="audio-ds" src="ds.wav" type="audio/wav"></audio>
     <audio id="audio-e" src="e.wav" type="audio/wav"></audio>
     <audio id="audio-f" src="f.wav" type="audio/wav"></audio>
+    <audio id="audio-fs" src="fs.wav" type="audio/wav"></audio>
     <audio id="audio-g" src="g.wav" type="audio/wav"></audio>
+    <audio id="audio-gs" src="gs.wav" type="audio/wav"></audio>
     <script>
       function reproducir(nota) {
         document.getElementById(`audio-${nota}`).play();
