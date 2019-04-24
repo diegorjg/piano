@@ -10,11 +10,11 @@
     </style>
   </head>
   <body>
-    <div class="tecla" onclick="reproducir();"></div>
+    <div class="tecla" onclick="reproducir('a');"></div>
     <audio id="audio-a" src="a.wav" type="audio/wav"></audio>
     <script>
-      function reproducir() {
-        document.getElementById('audio-a').play();
+      function reproducir(nota) {
+        document.getElementById(`audio-${nota}`).play();
       }
     </script>
   </body>
